@@ -1,0 +1,42 @@
+<html>
+<head>
+
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <title>Predict Toyota Model Class</title>
+</head>
+<body  class="bg-secondary">
+
+  <!-- Show  Banner-->
+  <div>
+    <img src="static/banner_image/toyota_logo.jpg" class="w3-border w3-padding" alt="toyota-model" style="height: 200px; width: 100%;">
+  </div>
+
+  <br><br>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm">
+          <img src="{{ user_image }}" alt="User Image" class="img-thumbnail" style="height: 200px; width: 70%;">
+      </div>
+
+      <div class="col-sm mt-5">
+        <h1 class="text-light">Prediction: </h1>
+        <p class="text-light" style="font-family: monospace;">{{pred_output}}</p>
+        <h3> <span><a href="/" class="btn btn-outline-light btn-sm">Back to Home</a></span></h3>
+      </div>
+    </div>
+    <div class="text-center "><br>
+      
+    </div>
+    <br>
+    <footer class="text-center text-light">
+      Toyota Model Prediction &copy; Ifeanyi Akawi 2021
+    </footer>
+  </div>
+
+</body>
+</html>

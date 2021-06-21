@@ -1,0 +1,46 @@
+<html>
+<head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     
+    <title>Predict Toyota Model Class</title>
+</head>
+<body class="bg-secondary">
+
+  <div >
+    <!-- Show  Banner-->
+    <div>
+      <img src="static/banner_image/toyota_logo.jpg" class="w3-border w3-padding" alt="toyota-model" style="height: 300px; width: 100%;">
+    </div>
+      <div class="container">
+        <form action="/predict" method="post" enctype="multipart/form-data"  onsubmit="showloading()" class="form"><br>
+          <div class="row bg-secondary">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <span class="text-left btn btn-default btn-file form-control">
+                  Upload Image <input type="file" name="image">
+                </span>   
+              </div>
+            </div>
+            
+            <div class="col-sm-6 mt-2">
+              <div class="form-group">
+                <span class="text-right">
+                  <input type="submit" value="Predict" class="  btn-sm btn-outline-light form-control">
+                </span>
+              </div>
+            </div>
+            
+          </div>
+          
+          
+        </form>
+      </div>
+      <br><br><br>
+    <footer class="text-center text-light">
+      Toyota Model Prediction &copy; Ifeanyi Akawi 2021
+    </footer>
+  </div>
+
+</body>
+</html>
