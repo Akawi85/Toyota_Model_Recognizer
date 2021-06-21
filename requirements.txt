@@ -1,5 +1,5 @@
 numpy
-flask
+Flask==2.0.1
 keras
 tensorflow-cpu
 gunicorn==20.1.0
