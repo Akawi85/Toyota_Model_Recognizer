@@ -1,4 +1,4 @@
-# Toyota_Model_Recognition
+# [Toyota_Model_Recognizer](https://toyota-model-recognizer.herokuapp.com/)
 This Web App uses [Visual Geometry Group (VGG19)](https://keras.io/api/applications/vgg/) model to build an API that predicts the model of toyota vehicles.
 
 ### Steps
@@ -34,16 +34,15 @@ For this reason the model was compressed by following the steps outlined in [thi
 The `compress_model.ipynb` notebook shows the code for this. 
 
 The compressed model is stored in the `model_dir` folder as `10x_tflite.tflite`.  
-The fully trained model together with the compressed model is found [here](https://drive.google.com/drive/folders/1ADfccMceNSsrVBJxOhUlA9e2plaa_Cmu?usp=sharing)
+The fully trained VGG19 model together with the compressed model is found [here](https://drive.google.com/drive/folders/1ADfccMceNSsrVBJxOhUlA9e2plaa_Cmu?usp=sharing)
 
 # Running the service...
-- create an insolated python virtual environment [see my guide here](https://docs.google.com/document/d/19IpozHrM38HzVSI4PjwRFJSNeLdcceUKg98fr2Db-DQ/edit) *(for windows users using WSL)*
-- Install dependencies in the `requirements.txt` file
-- run the `app.py` script
-- open `localhost` with the default listening port
-- After the page loads, click on `choose file` to upload a toyota vehicle image saved in your computer
-- click on `predict` to see the predicted class of the image you uploaded
-- click on `back to home` to select another image.
+- Click [here](https://toyota-model-recognizer.herokuapp.com/) to run a prediction  
+- Click on `Choose File` to select an image
+- Select a toyota image from your local machine
+- Click on the `Predict` button to the right
+- Wait for approximate 1 (one) minute for the system to preprocess and predict image.
+- Viola!!! Here you have prediction.
 
 # Snapshot of Web App  
 #### (The home page)  
