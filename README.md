@@ -41,8 +41,8 @@ The fully trained VGG19 model together with the compressed model is found [here]
 - Click on `Choose File` to select an image
 - Select a toyota image from your local machine
 - Click on the `Predict` button to the right
-- Wait for approximate 1 (one) minute for the system to preprocess and predict image.
-- Viola!!! Here you have prediction.
+- Wait for approximate 1 (one) minute for the system to process and predict the image class.
+- Viola!!! Here you have your prediction.
 
 # Snapshot of Web App  
 #### (The home page)  
