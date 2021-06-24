@@ -10,7 +10,7 @@ from keras.preprocessing import image
 import tensorflow as tf
 
 # load model
-interpreter_file = tf.lite.Interpreter(model_path="./model_dir/10x_tflite.tflite")
+interpreter_file = tf.lite.Interpreter(model_path="./model_dir/model.tflite")
 interpreter_file.allocate_tensors()
 
 print('@@ Model loaded')
@@ -22,7 +22,7 @@ def predict_image(interpreter, imagefile):
     output_details = interpreter.get_output_details()
 
     test_image = image.load_img(imagefile, target_size = (224, 224))
-    test_image = image.img_to_array(test_image)/255
+    test_image = image.img_to_array(test_image).astype(np.uint8)
     test_image = np.expand_dims(test_image, axis=0)
 
     interpreter.set_tensor(input_details[0]['index'], test_image)
